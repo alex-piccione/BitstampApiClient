@@ -1,0 +1,2 @@
+# BitstampApiClient
+Bitstamp API client
