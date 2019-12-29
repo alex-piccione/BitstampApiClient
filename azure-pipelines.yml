@@ -1,0 +1,24 @@
+# it works also without "resources" but when chaange the repository name in GitHub it will be lost
+resources:
+  #containers: 
+  repositories:
+  - repository: GitHub
+    type: github
+    name: alex75it/BitstampApiClient
+    endpoint: alex75it 
+    # GitHub service connection name (defined in Project Settings > GitHub connections)
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
